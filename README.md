@@ -31,5 +31,5 @@ Well we already got one! Check out [Shin-Nil's Godot Template](https://github.co
 
 Donate - Thank you!
 -----------
-[![Donate](https://www.paypal.me/Moonsdontburn)
+[![Donate](https://img.shields.io/badge/Donate-PayPal-green.svg)](https://www.paypal.me/Moonsdontburn)
 
