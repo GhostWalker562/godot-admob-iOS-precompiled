@@ -16,7 +16,7 @@ If you have the spare money to help out a young programmer (Yeah that's right I'
 How to use
 ----------
 
-- Download the zip file on the [releases tab]();
+- Download the zip file on the [releases tab](https://github.com/GhostWalker562/godot-admob-iOS-precompiled/releases);
 - Extract the files on your file system;
 - [Export](https://docs.godotengine.org/en/3.1/getting_started/workflow/export/exporting_projects.html) your iOS project normally by using the template provided by Godot themselves.
 - Put the template provided into the iOS export and rename it to replace the previous .a file.
