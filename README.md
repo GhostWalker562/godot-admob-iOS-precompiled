@@ -8,7 +8,7 @@ I'm providing an AdMob template for iOS compiled by yours truly. I've used it su
 
 I'm only trying to compile the latest **working** version for AdMob.
 
-I spent a good three days trying to figure out how to compile this **#@$T** and I really wish I didn't waste 72 hours of my good life.
+I spent a good three days trying to figure out how to compile this **$#@T** and I really wish I didn't waste 72 hours of my good life.
 If you have the spare money to help out a young programmer (Yeah that's right I'm 16) consider donating, compiling each architecture takes a significantly long time (I have an old Macbook Pro) and saving up the money to buy new hardware is my goal right now.
 
 [Click me to Donate!](https://www.paypal.me/Moonsdontburn)
@@ -22,6 +22,7 @@ How to use
 - Put the template provided into the iOS export and rename it to replace the previous .a file.
 ![Export Screenshot](/Example.png "Example Screenshot")
 - money money money!
+- For the API (Coding stuff) and furthing exporting instructions, click > [Godot Admob](https://github.com/kloder-games/godot-admob)
 - **Currently I've only compiled 'Release' and so the debug template is not available yet. It takes ages to do one out of two architectures okay.**
 
 Why not Android?
