@@ -20,7 +20,7 @@ How to use
 - Extract the files on your file system;
 - [Export](https://docs.godotengine.org/en/3.1/getting_started/workflow/export/exporting_projects.html) your iOS project normally by using the template provided by Godot themselves.
 - Put the template provided into the iOS export and rename it to replace the previous .a file.
-![Export Screenshot](/media/Example.png "Example Screenshot")
+![Export Screenshot](/Example.png "Example Screenshot")
 - money money money!
 - **Currently I've only compiled 'Release' and so the debug template is not available yet. It takes ages to do one out of two architectures okay.**
 
