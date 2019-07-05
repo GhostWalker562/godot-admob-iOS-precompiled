@@ -22,7 +22,7 @@ How to use
 - Put the template provided into the iOS export and rename it to replace the previous .a file.
 ![Export Screenshot](/Example.png "Example Screenshot")
 - money money money!
-- For the API (Coding stuff) and furthing exporting instructions, click > [Godot Admob](https://github.com/kloder-games/godot-admob)
+- For the API (Coding stuff) and further exporting instructions, click > [Godot Admob](https://github.com/kloder-games/godot-admob)
 - **Currently I've only compiled 'Release' and so the debug template is not available yet. It takes ages to do one out of two architectures okay.**
 
 Why not Android?
