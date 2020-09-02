@@ -10,6 +10,12 @@ I'm only trying to compile the latest **working** version for AdMob.
 
 [Click me to Donate!](https://www.paypal.me/Moonsdontburn)
 
+##Update
+##----------
+
+- Make sure to link JavaScriptCore framework in addition to the precious requirements.
+
+
 How to use
 ----------
 
