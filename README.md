@@ -1,6 +1,8 @@
 Godot Custom AdMob Mobile Template - iOS
 ==========
 
+**[NO LONGER MAINTAINED]**
+
 I'm providing an AdMob template for iOS compiled by yours truly. I've used it successfully in my projects and I will try to update it as frequently as possible.
 
 - [Godot Game Engine](https://godotengine.org/)
