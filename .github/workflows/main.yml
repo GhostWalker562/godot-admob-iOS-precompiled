@@ -19,7 +19,6 @@ jobs:
   compile:
     # The type of runner that the job will run on
     runs-on: macos-latest
-
     # Steps represent a sequence of tasks that will be executed as part of the job
     steps:
       # Preparing requirements for compilation
@@ -36,15 +35,15 @@ jobs:
 
       # Runs a single command using the runners shell
       - name: Build arm
-        run: scons p=iphone tools=no target=release arch=arm
+      - run: scons p=iphone tools=no target=release arch=arm
       - name: Build arm64
-        run: scons p=iphone tools=no target=release arch=arm64
+      - run: scons p=iphone tools=no target=release arch=arm64
       - name: Combine
-        run: lipo -create bin/libgodot.iphone.opt.arm.a bin/libgodot.iphone.opt.arm64.a -output bin/libgodot.iphone.release.fat.a
+      - run: lipo -create bin/libgodot.iphone.opt.arm.a bin/libgodot.iphone.opt.arm64.a -output bin/libgodot.iphone.release.fat.a
         
         
       - name: Upload a Build Artifact
-        uses: actions/upload-artifact@v2.2.4
+      - uses: actions/upload-artifact@v2.2.4
         with:
           # Artifact name
           name: Template
