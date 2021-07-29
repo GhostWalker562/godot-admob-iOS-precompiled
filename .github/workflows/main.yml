@@ -23,15 +23,15 @@ jobs:
     steps:
       # Preparing requirements for compilation
       - name: Homebrew
-      - uses: artemnovichkov/action-homebrew@0.1.0
+        run: /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
       - run: brew install scons
-      - uses: maxim-lobanov/setup-xcode@v1
+        uses: maxim-lobanov/setup-xcode@v1
         with:
           xcode-version: latest-stable
       
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
       - uses: actions/checkout@v2
-      - run: cd export
+        run: cd export
 
       # Runs a single command using the runners shell
       - name: Build arm
