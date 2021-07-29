@@ -31,17 +31,22 @@ jobs:
       
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
       - uses: actions/checkout@v2
-      - run: cd $GITHUB_WORKSPACE/export
       - run: pwd
       - run: ls
 
       # Runs a single command using the runners shell
       - name: Build arm
-        run: scons p=iphone tools=no target=release arch=arm
+        run: |
+          cd export
+          scons p=iphone tools=no target=release arch=arm
       - name: Build arm64
-        run: scons p=iphone tools=no target=release arch=arm64
+        run: |
+          cd export
+          scons p=iphone tools=no target=release arch=arm64
       - name: Combine
-        run: lipo -create bin/libgodot.iphone.opt.arm.a bin/libgodot.iphone.opt.arm64.a -output bin/libgodot.iphone.release.fat.a
+        run: |
+          cd export
+          lipo -create bin/libgodot.iphone.opt.arm.a bin/libgodot.iphone.opt.arm64.a -output bin/libgodot.iphone.release.fat.a
         
         
       - name: Upload a Build Artifact
