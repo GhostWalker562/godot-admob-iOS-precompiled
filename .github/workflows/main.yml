@@ -31,7 +31,7 @@ jobs:
       
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
       - uses: actions/checkout@v2
-      - run: cd export
+      - run: cd $GITHUB_WORKSPACE/export
 
       # Runs a single command using the runners shell
       - name: Build arm
