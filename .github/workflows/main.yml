@@ -25,21 +25,21 @@ jobs:
       - name: Homebrew
         run: /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
       - run: brew install scons
-        uses: maxim-lobanov/setup-xcode@v1
+      - uses: maxim-lobanov/setup-xcode@v1
         with:
           xcode-version: latest-stable
       
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
       - uses: actions/checkout@v2
-        run: cd export
+      - run: cd export
 
       # Runs a single command using the runners shell
       - name: Build arm
-      - run: scons p=iphone tools=no target=release arch=arm
+        run: scons p=iphone tools=no target=release arch=arm
       - name: Build arm64
-      - run: scons p=iphone tools=no target=release arch=arm64
+        run: scons p=iphone tools=no target=release arch=arm64
       - name: Combine
-      - run: lipo -create bin/libgodot.iphone.opt.arm.a bin/libgodot.iphone.opt.arm64.a -output bin/libgodot.iphone.release.fat.a
+        run: lipo -create bin/libgodot.iphone.opt.arm.a bin/libgodot.iphone.opt.arm64.a -output bin/libgodot.iphone.release.fat.a
         
         
       - name: Upload a Build Artifact
